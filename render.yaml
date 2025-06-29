@@ -1,0 +1,14 @@
+# render.yaml - Deployment configuration for Render.com
+
+services:
+  - type: web
+    name: RahmaniFxTraderPro
+    env: docker
+    plan: free
+    region: oregon
+    repo: https://github.com/Miladrahmani565/Rahmani-Fx-Trader-Pro
+    dockerContext: .
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+
+version: "1"
